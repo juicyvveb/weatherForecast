@@ -27,9 +27,6 @@
         timerId: '',
       }
     },
-    created(){
-      console.log('suka')
-    },
     directives: {
       focus: {
         // определение директивы
@@ -81,7 +78,7 @@
  
 
 <style lang="less" scoped>
-@import './vars.less';
+@import '../assets/less/vars.less';
 @keyframes warn {
         50% { 
             border: 6px solid rgba(232, 46, 46, 0.7);

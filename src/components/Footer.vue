@@ -68,8 +68,8 @@ export default{
 
 
 <style lang="less" scoped>
-@import './vars.less';
-@import './general.less';
+@import '../assets/less/vars.less';
+@import '../assets/less/general.less';
 .footer-wrap{
         display: flex;
         flex-wrap: wrap;

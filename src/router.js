@@ -4,8 +4,9 @@ import Liked from './pages/Liked.vue'
 
 export default new VueRouter ({
    routes : [
-    { path: '', name: 'main', component: Main },
-    { path: '/saved', name: 'saved', component: Liked },
+    { path: '/', component: Main },
+    // { path: '/weatherForecast', name: 'main', component: Main },
+    { path: '/saved', component: Liked },
   ],
   mode: 'history'
 }

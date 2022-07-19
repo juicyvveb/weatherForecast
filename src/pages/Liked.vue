@@ -87,8 +87,8 @@ export default{
  
 
 <style lang="less" scoped>
-@import '../components/vars.less';
-@import '../components/general.less';
+@import '../assets/less/general.less';
+@import '../assets/less/vars.less';
 
     .list-enter{
         opacity: 0;

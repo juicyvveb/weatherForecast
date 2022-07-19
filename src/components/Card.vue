@@ -45,7 +45,7 @@ export default{
 </script>
 
 <style scoped lang="less">
-@import './vars.less';
+@import '../assets/less/vars.less';
 
     .mainInfo {
         display: flex;

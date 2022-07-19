@@ -3,13 +3,14 @@
   <b-navbar class='navbar padding' toggleable="lg" type="dark" variant="dark">
   
     <b-navbar-nav class='header-links container'>
-        <router-link v-for="(page,i)  in pages"  
-        :to="{name: page}" 
-        :key="i"
-        class="header-links--item"
-        ><span class='text'>{{page}}</span>
-        <img class="icon" :src="require(`../img/${page}.svg`)">
-        </router-link>   
+        <router-link to="/" class="header-links--item">
+            <span class='text'>main</span>
+            <img class="icon" :src="require(`../img/main.svg`)">
+        </router-link>
+        <router-link to="/saved" class="header-links--item">
+            <span class='text'>saved</span>
+            <img class="icon" :src="require(`../img/saved.svg`)">
+        </router-link>
     </b-navbar-nav>
   </b-navbar>
 </div>
@@ -17,8 +18,6 @@
 
 
 <script>
-        // <img class="icon" v-bind:src="`../img/search.png`"  :key="i">
-
 export default{
     props: ['pages'],
     data(){
@@ -29,7 +28,6 @@ export default{
     },
     methods: {
         imageBg(){
-            // return ('url' + '(../img/'+page+'.svg)')
             return ('url(../img/search.png)')
         }
     }
@@ -38,8 +36,8 @@ export default{
  
 
 <style lang="less" scoped>
-@import './vars.less';
-@import './general.less';
+@import '../assets/less/vars.less';
+@import '../assets/less/general.less';
 .container {
     margin-left: 0;
 }

@@ -46,11 +46,6 @@ export default {
       return document.body.clientWidth
     }
   },
-  watch: {
-    windowWidth(){
-      console.log(this.windowWidth)
-    }
-  }
 }
 </script>
 
