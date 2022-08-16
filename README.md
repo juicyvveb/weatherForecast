@@ -1,5 +1,5 @@
-# 2project-v
-
+Двустраничное приложение прогноза погоды на Vue.js с возможностью добавлять избранные города и удалять (через localStorage);
+Версия на GH-Pages - 
 ## Project setup
 ```
 npm install
@@ -15,10 +15,5 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
